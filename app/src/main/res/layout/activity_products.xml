@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.products.ProductsActivity">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvProducts"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:listitem="@layout/item_product" />
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/common_ui_padding">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fabCart"
+            app:rippleColor="@color/colorPrimaryDark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="@dimen/common_ui_padding"
+            android:src="@drawable/ic_shopping_cart_24dp"
+            app:fabSize="normal" />
+
+        <TextView
+            android:id="@+id/tvCartItemsCount"
+            android:layout_width="@dimen/common_ui_padding_medium"
+            android:layout_height="@dimen/common_ui_padding_medium"
+            android:layout_alignEnd="@+id/fabCart"
+            android:layout_gravity="top|end"
+            android:layout_marginTop="@dimen/common_ui_padding_small"
+            android:background="@drawable/badge_background"
+            android:elevation="12dp"
+            android:gravity="center"
+            android:padding="3dp"
+            android:textColor="@android:color/white"
+            tools:text="10" />
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

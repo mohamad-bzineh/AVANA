@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Avana Test</string>
+
+    <string name="facebook_app_id" translatable="false">329399790947392</string>
+    <string name="facebook_login_protocol_scheme" translatable="false">329399790947392</string>
+
+    <string name="title_products">Products</string>
+    <string name="title_information">Information</string>
+    <string name="message_connection_error">Internet Connection Not Stable</string>
+    <string name="message_connect_internet">Connect to internet</string>
+    <string name="message_error_unknown">Unknown Error</string>
+    <string name="text_checkout">Checkout</string>
+    <string name="text_price">Price:</string>
+    <string name="text_name">Name:</string>
+    <string name="text_email">Email:</string>
+    <string name="text_confirm_order">Confirm order</string>
+    <string name="text_enter_address">Ship to</string>
+    <string name="text_add_to_cart">Add to cart</string>
+    <string name="text_cart_total">Total</string>
+    <string name="title_shopping_cart">Shopping Cart</string>
+    <string name="text_pay">Pay now</string>
+    <string name="text_card_info">Card info</string>
+</resources>
